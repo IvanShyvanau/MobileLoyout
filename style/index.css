@@ -1,0 +1,237 @@
+**{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color:#E1F5E0;
+  margin: auto;
+}
+/*верстка header*/
+.header{
+  width: 1200px;
+  height: 50px;
+  margin: auto;
+  background-color:#E5E5E5 ;
+  border-radius: 10px;
+  padding: 5px 0;
+  box-shadow: 5px 4px 13px 0px rgba(45, 50, 50, 0.75);
+}
+
+/*навигация*/
+.header__navigation{
+  width: 60%;
+  height: 40px;
+  margin: auto;
+  margin-left: 595px;
+  text-align: center;
+}
+
+.navigation{
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-left: 100px;
+}
+
+.navigation__link{
+  list-style-type: none;
+  float: left;
+  text-align: center; margin: 10px 40px;
+  font-size: 1.2rem;
+
+}
+
+/*секция с банером*/
+.section{
+  width: 1200px;
+  height: 200px;
+  margin: auto;
+  background-color: #DDE2A7;
+  border-radius: 10px;
+  padding: 0;
+  margin-top: 10px;
+  box-shadow: 5px 4px 13px 0px rgba(45, 50, 50, 0.75);
+}
+
+.picture{
+  background-image: url(https://images.unsplash.com/photo-1556477468-0940de42a4c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100% 85%;
+  width: 1200px;
+  height: 200px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.section__title{
+  width: 1200px;
+  height: 20px;
+  font-size: 1.6rem;
+  text-align: center;
+  align-items: center;
+  float: left;
+  margin-left: 400px;
+  font-family: 'New Tegomin', serif;
+}
+/*секция с техническими характеристиками*/
+.technical-data{
+  width: 1200px;
+  height: 400px;
+  margin: auto;
+  background-color: #E5E5E5  ;
+  border-radius: 10px;
+  padding: 50px 0;
+  margin-top: 10px;
+  box-shadow: 5px 4px 13px 0px rgba(45, 50, 50, 0.75);
+}
+
+
+.main-specifications{
+  width: 25%;
+  height: 200px;
+  float: left;
+  margin: auto;
+  border: 1px solid #000;
+  margin: 0 45px;
+  text-align: center;
+  font-family: 'New Tegomin', serif;
+  padding: 100px 0;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  box-shadow: 5px 4px 13px 0px rgba(45, 50, 50, 0.75);
+}
+
+
+
+/*секция с примерами*/
+.examples{
+  width: 1200px;
+  height: 630px;
+  margin: auto;
+  background-color: #E5E5E5  ;
+  border-radius: 10px;
+  padding: 50px 0;
+  margin-top: 10px;
+  box-shadow: 5px 4px 13px 0px rgba(45, 50, 50, 0.75);
+}
+
+.examples__card{
+  width: 40%;
+  height: 100px;
+  border: 1px solid #000;
+  float: left;
+  margin: auto;
+  margin-left: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'New Tegomin', serif;
+  font-size: 1.6rem;
+  box-shadow: 5px 4px 13px 0px rgba(45, 50, 50, 0.75);
+}
+
+@media(max-width:768px){
+  .header{
+    width: 768px;
+    
+  }
+  .header__navigation{
+    width: 80%;
+    margin-left: 200px;
+  }
+  .section{
+    width: 768px;
+    height: 200px
+  }
+  .picture{
+    width: 768px;
+    height: 200px
+  }
+  .section__title{
+    margin-left: 20px;
+  }
+  .technical-data{
+    width: 768px;
+    height: 900px;
+  }
+  .main-specifications{
+    width: 85%;
+    height: 70px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .examples{
+    width: 768px;
+    height: 850px;
+  }
+  .examples__card{
+    width: 30%;
+  height: 150px;
+  }
+  .examples__title{
+    display: none;
+  }
+
+}
+@media(max-width:320px){
+  .header{
+    width: 320px;
+    
+  }
+  .header__navigation{
+    width: 80%;
+    margin-left: 200px;
+  }
+  .navigation{
+    width: 320px;
+    margin: 0;
+  }
+  .header__navigation{
+    width: 320px;
+    margin: 0;
+  }
+  .navigation__link{
+    margin: 9px; 
+  }
+  .section{
+    width: 320px;
+    height: 150px;
+  }
+  .picture{
+    width: 320px;
+    height: 150px;
+  }
+  .section__title{
+    display: none;
+  }
+  .technical-data{
+    width: 320px;
+    height: 280px;
+  }
+  .main-specifications{
+    height: 50px;
+    margin: 10px 20px;
+    padding: 10px 5px;
+  }
+  .examples{
+    width: 320px;
+    height: 630px;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .examples__card{
+    width: 70%;
+    height: 20px;
+    padding: 20px 20px;
+    margin: 20px;
+  }
+  .examples__title{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+}
